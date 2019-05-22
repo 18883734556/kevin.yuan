@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="INFO">
+    <Appenders>
+        <!--添加一个控制台追加器-->
+        <Console name="Console" target="SYSTEM_OUT" follow="true">
+            <PatternLayout>
+                <pattern>[%-5p] %d %c - %m%n</pattern>
+            </PatternLayout>
+        </Console>
+    </Appenders>
+    <Loggers>
+        <Root level="debug">
+            <AppenderRef ref="Console" />
+        </Root>
+    </Loggers>
+</Configuration>
+<!--<?xml version="1.0" encoding="UTF-8"?>-->
+<!--<Configuration status="warn" name="MyApp" packages="">-->
+<!--<Appenders>-->
+<!--<Console name="STDOUT" target="SYSTEM_OUT">-->
+<!--<PatternLayout pattern="%d %p %c{1.} [%t] %m%n"/>-->
+<!--</Console>-->
+<!--</Appenders>-->
+<!--<Loggers>-->
+<!--<Root level="error">-->
+<!--<AppenderRef ref="STDOUT"/>-->
+<!--</Root>-->
+<!--</Loggers>-->
+<!--</Configuration>-->
